@@ -2,6 +2,8 @@ import re
 
 import records
 
+from .exceptions import NotFoundError, NotUniqueError
+
 
 db = records.Database()
 
