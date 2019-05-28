@@ -14,16 +14,16 @@ class Repository:
 
     def __init__(self, model):
         """Initializes the repository."""
-        self.db = db
-        self.model = model
-        self.create_table()
-
         if type(self).table is None:
             type(self).table = "_".join(
                 word
                 for word in re.split(r"([A-Z][^A-Z]*)", self.model.__name__)
                 if word
             ).lower()
+
+        self.db = db
+        self.model = model
+        self.create_table()
 
     @property
     def last_id(self):
