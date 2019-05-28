@@ -17,7 +17,7 @@ class Repository:
         if type(self).table is None:
             type(self).table = "_".join(
                 word
-                for word in re.split(r"([A-Z][^A-Z]*)", self.model.__name__)
+                for word in re.split(r"([A-Z][^A-Z]*)", model.__name__)
                 if word
             ).lower()
 
