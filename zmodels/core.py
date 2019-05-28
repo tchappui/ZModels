@@ -1,5 +1,10 @@
 import re
 
+import records
+
+
+db = records.Database()
+
 
 class Repository:
 
