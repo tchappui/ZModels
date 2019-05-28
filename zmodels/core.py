@@ -23,7 +23,7 @@ class Repository:
                 word
                 for word in re.split(r"([A-Z][^A-Z]*)", self.model.__name__)
                 if word
-            )
+            ).lower()
 
     @property
     def last_id(self):
