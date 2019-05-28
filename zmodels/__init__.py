@@ -4,6 +4,6 @@
 
 __author__ = """Thierry Chappuis"""
 __email__ = 'thierry@chappuis.io'
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 
 from .core import Model, Repository
